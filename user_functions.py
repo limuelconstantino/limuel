@@ -1,4 +1,3 @@
-
 def register_user():
     user_dict = {}
     user_dict['user_name'] = input("Enter user name: ")
