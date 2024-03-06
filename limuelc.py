@@ -1,10 +1,17 @@
-def calculate_grade(score):
+def get_length():
+    return float(input("Enter the length of the rectangle: "))
 
-  This function takes a score as input and returns the corresponding letter grade.
+def get_width():
+    return float(input("Enter the width of the rectangle: "))
 
-  Args:
-      score: The numerical score (0-100).
+def calculate_area(length, width):
+    return length * width
 
-  Returns:
-      The letter grade (A, B, C, D, or F).
-  """
+def main():
+    length = get_length()
+    width = get_width()
+    area = calculate_area(length, width)
+    print(f"The area of the rectangle is {area} square units.")
+
+if __name__ == "__main__":
+    main()
